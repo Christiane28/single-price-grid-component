@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Overall body */
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+}
+
+p {
+  line-height: 22px;
+}
+
+#main {
+  border-radius: 10px;
+  box-shadow: 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+  width: 60%;
+}
+
+#space {
+  padding-top: 50px;
+}
+
+/* Upper white box */
+#section1 {
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: hsl(218, 22%, 67%);
+  padding: 30px;
+}
+
+#section1 h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+#section1 h3 {
+  color: hsl(71, 73%, 54%);
+}
+
+/* Section2 and Section3 */
+.flex {
+  display: flex;
+}
+
+/* First blue box */
+button {
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  width: 75%;
+}
+
+strong {
+  color: #fff;
+  font-size: 35px;
+  line-height: 1.1;
+  padding-right: 10px;
+}
+
+#section2 {
+  background-color: hsl(179, 62%, 43%);
+  border-bottom-left-radius: 10px;
+  color: #fff;
+  float: left;
+  padding: 30px;
+  width: 50%;
+}
+
+#section2 p.one {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+#section2 p.two {
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
+/* Second blue box */
+#section3 {
+  background-color: hsl(179, 47.2%, 51.8%);
+  border-bottom-right-radius: 10px;
+  color: #fff;
+  display: block;
+  float: left;
+  padding: 30px;
+  width: 50%;
+}
+
+#section3 p {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  button {
+    width: 100%;
+  }
+
+  .flex {
+    display: inline;
+  }
+
+  #main {
+    width: 90%;
+  }
+
+  #section2 {
+    border-bottom-left-radius: 0;
+    float: none;
+    width: 100%;
+  }
+
+  #section3 {
+    border-bottom-left-radius: 10px;
+    float: none;
+    width: 100%
+  }
+}
